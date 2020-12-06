@@ -1,0 +1,13 @@
+[package]
+name = "weather-notifier"
+version = "0.1.0"
+authors = ["Evgeny Barbashov <evgeny@barbashov.dev>"]
+edition = "2018"
+
+[dependencies]
+reqwest = { version = "0.10", features = ["json"] }
+tokio = { version = "0.2", features = ["full"] }
+serde =  { version = "1.0", features = ["derive"] }
+config = { version = "0.10", features = ["toml"] }
+clap = "2.33"
+chrono = "0.4"
